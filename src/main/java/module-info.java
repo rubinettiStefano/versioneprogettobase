@@ -4,8 +4,9 @@ module com.generation.jpafx {
 	requires jakarta.persistence;
 	requires org.hibernate.orm.core;
 
-	opens com.generation.jpafx to javafx.fxml, org.hibernate.orm.core;
-	exports com.generation.jpafx;
-	exports com.generation.jpafx.model;
-	opens com.generation.jpafx.model to javafx.fxml, org.hibernate.orm.core;
+	opens com.generation to javafx.fxml, org.hibernate.orm.core;
+	exports com.generation;
+	exports com.generation.model;
+	opens com.generation.model to javafx.fxml, org.hibernate.orm.core;
+	opens com.generation.controller to javafx.fxml, org.hibernate.orm.core;
 }
