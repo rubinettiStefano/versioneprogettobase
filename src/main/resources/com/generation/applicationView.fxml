@@ -14,6 +14,10 @@
             <Text fx:id="listaCase" layoutX="351.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="302.13671875" />
             <Button layoutX="461.0" layoutY="26.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
             <Text layoutX="458.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LISTA CASE" />
+            <TextField fx:id="area" layoutX="312.0" layoutY="290.0" promptText="area" />
+            <TextField fx:id="type" layoutX="312.0" layoutY="326.0" promptText="type" />
+            <TextField fx:id="house_id" layoutX="312.0" layoutY="252.0" promptText="id casa" />
+            <Button layoutX="314.0" layoutY="360.0" mnemonicParsing="false" onAction="#insertRoom" text="Salva stanza" />
          </children>
       </Pane>
    </children>
