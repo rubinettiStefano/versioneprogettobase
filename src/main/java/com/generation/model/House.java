@@ -23,6 +23,9 @@ public class House
 	@OneToMany(mappedBy = "house")
 	private List<Room> rooms = new ArrayList<>();
 
+	@ManyToMany(mappedBy = "houses")
+	private List<Electrician> electricians = new ArrayList<>();
+
 	public Integer getId()
 	{
 		return id;
@@ -67,4 +70,23 @@ public class House
 		return getTotalArea()*smp;
 	}
 
+	public List<Room> getRooms()
+	{
+		return rooms;
+	}
+
+	public void setRooms(List<Room> rooms)
+	{
+		this.rooms = rooms;
+	}
+
+	public List<Electrician> getElectricians()
+	{
+		return electricians;
+	}
+
+	public void setElectricians(List<Electrician> electricians)
+	{
+		this.electricians = electricians;
+	}
 }
